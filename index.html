@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Meal & Market Calculator</title>
+  <link rel="stylesheet" href="meal.css">
+  
+  <!-- Excel Export -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+  <!-- PDF Export -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+  <h2>Meal & Market Calculator</h2>
+
+  <div id="peopleContainer"></div>
+
+  <button onclick="addPerson()">➕ Add Person</button>
+  <button onclick="calculate()">✅ Calculate Dues</button>
+  <button onclick="exportToPDF()">📄 Export PDF</button>
+  <button onclick="exportToExcel()">📊 Export Excel</button>
+
+  <div class="results" id="output"></div>
+
+  <script src="meal.js"></script>
+</body>
+</html>
